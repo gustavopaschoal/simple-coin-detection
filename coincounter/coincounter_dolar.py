@@ -64,7 +64,7 @@ print('Number of coins detected: ', len(keypoints))
 
 # drawing coins (blobs) borders
 borders = cv.drawKeypoints(erosion2, keypoints, np.array([]), (0,0,255), 
-							cv.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+			   cv.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
 
 # drawing circles on original image using data from blob detection
 output = input_dolar.copy()
